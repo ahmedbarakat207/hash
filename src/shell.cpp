@@ -57,7 +57,9 @@ void start_shell(){
             }
         } else if (command == "ls") {
             ls();
-        }else {
+        } else if (command == "clear") {
+            clear();
+        } else {
             if (arg.size() > 1) {
                 exec(command.c_str(), vector<string>(arg.begin() + 1, arg.end()));  
             } else {

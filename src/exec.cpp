@@ -32,7 +32,11 @@ using namespace std;
     }
     return result;
 }*/
-
+void clear(){
+    //execv("/bin/cls", NULL);
+    //system.cls();
+    printf("\e[1;1H\e[2J");
+}
 // i am not sure how tf does it works but it works anyway :p
 void exec(const char* cmd, const vector<string>& args) {
     if (cmd == nullptr || strlen(cmd) == 0) {

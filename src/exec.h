@@ -15,5 +15,5 @@
 
 
 void exec(const char* cmd, const std::vector<std::string>& args);
-
+void clear();
 #endif 
